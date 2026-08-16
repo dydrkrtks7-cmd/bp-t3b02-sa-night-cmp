@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>영등포 가라오케 위치 정보 — 지역 내 최적의 공간 선택을 위한 실용적 가이드</title>
+ <meta name="description" content="영등포 지역 가라오케의 위치, 접근성 및 환경을 종합적으로 분석하여 목적과 인원에 맞는 최적의 공간을 선택할 수 있도록 안내합니다.">
+ <meta name="keywords" content="영등포 가라오케, 가라오케 위치, 영등포 노래방, 가라오케 선택 기준, 영등포 지역 가이드">
+ <link rel="canonical" href="https://zone-karaoke-note.karaoke-gyodae-hub.xyz/">
+ <meta property="og:title" content="영등포 가라오케 위치 정보 — 지역 내 최적의 공간 선택을 위한 실용적 가이드">
+ <meta property="og:description" content="영등포 지역 가라오케의 위치, 접근성 및 환경을 종합적으로 분석하여 목적과 인원에 맞는 최적의 공간을 선택할 수 있도록 안내합니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://zone-karaoke-note.karaoke-gyodae-hub.xyz/">
+ <meta property="og:site_name" content="영등포 가라오케 위치 정보">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="영등포 가라오케 위치 정보 — 지역 내 최적의 공간 선택을 위한 실용적 가이드">
+ <meta name="twitter:description" content="영등포 지역 가라오케의 위치, 접근성 및 환경을 종합적으로 분석하여 목적과 인원에 맞는 최적의 공간을 선택할 수 있도록 안내합니다.">
+ <style>
+ :root {
+ --primary: #2e2522;
+ --secondary: #fcf8f2;
+ --accent: #7f5539;
+ --border: 1px solid var(--primary);
+ --border-thick: 2px solid var(--primary);
+ --gap-sm: 16px;
+ --gap-md: 48px;
+ --gap-lg: 72px;
+ --section-gap: 120px;
+ --container-width: 960px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background-color: var(--secondary);
+ color: var(--primary);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ .random-container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 var(--gap-sm);
+ }
+
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-weight: 700;
+ line-height: 1.2;
+ letter-spacing: -0.02em;
+ }
+
+ h1 {
+ font-size: clamp(2.5rem, 5vw, 3.5rem);
+ margin-bottom: var(--gap-md);
+ }
+
+ h2 {
+ font-size: clamp(1.5rem, 3vw, 2rem);
+ margin-bottom: var(--gap-md);
+ padding-bottom: var(--gap-sm);
+ border-bottom: var(--border);
+ }
+
+ h3 {
+ font-size: 1.25rem;
+ margin-bottom: var(--gap-sm);
+ }
+
+ p {
+ margin-bottom: var(--gap-md);
+ max-width: 70ch;
+ }
+
+ /* Navigation */
+ .random-nav {
+ position: sticky;
+ top: 0;
+ background-color: var(--secondary);
+ border-bottom: var(--border);
+ padding: var(--gap-sm) 0;
+ z-index: 100;
+ }
+
+ .random-nav__inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .random-nav__logo {
+ font-size: 1.125rem;
+ font-weight: 700;
+ text-decoration: none;
+ color: var(--primary);
+ border: var(--border);
+ padding: 8px 16px;
+ }
+
+ .random-nav__links {
+ display: flex;
+ gap: var(--gap-md);
+ list-style: none;
+ }
+
+ .random-nav__link {
+ text-decoration: none;
+ color: var(--primary);
+ font-size: 0.875rem;
+ font-weight: 600;
+ padding: 4px 0;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.2s ease;
+ }
+
+ .random-nav__link:hover {
+ border-bottom-color: var(--primary);
+ }
+
+ .random-hamburger {
+ display: none;
+ background: none;
+ border: var(--border);
+ padding: 8px;
+ cursor: pointer;
+ width: 40px;
+ height: 40px;
+ }
+
+ .random-hamburger__line {
+ display: block;
+ width: 20px;
+ height: 2px;
+ background-color: var(--primary);
+ margin: 4px auto;
+ }
+
+ /* Hero Section */
+ .random-hero {
+ padding: var(--section-gap) 0;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .random-hero__grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: var(--gap-lg);
+ align-items: center;
+ }
+
+ .random-hero__content {
+ position: relative;
+ z-index: 2;
+ }
+
+ .random-hero__tag {
+ font-size: 0.75rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--accent);
+ margin-bottom: var(--gap-sm);
+ display: inline-block;
+ }
+
+ .random-hero__visual {
+ position: relative;
+ height: 400px;
+ }
+
+ .random-geo-shape {
+ position: absolute;
+ background-color: var(--primary);
+ }
+
+ .random-geo-shape--rect1 {
+ width: 200px;
+ height: 200px;
+ top: 10%;
+ left: 10%;
+ }
+
+ .random-geo-shape--rect2 {
+ width: 150px;
+ height: 300px;
+ bottom: 10%;
+ right: 10%;
+ background-color: var(--accent);
+ }
+
+ .random-geo-shape--circle {
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+ top: 30%;
+ right: 25%;
+ background-color: var(--secondary);
+ border: var(--border-thick);
+ }
+
+ /* Selection Criteria */
+ .random-selection {
+ padding: var(--section-gap) 0;
+ border-top: var(--border);
+ }
+
+ .random-criteria-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: var(--gap-md);
+ }
+
+ .random-criteria-table th,
+ .random-criteria-table td {
+ padding: var(--gap-sm);
+ text-align: left;
+ border-bottom: var(--border);
+ }
+
+ .random-criteria-table th {
+ font-weight: 700;
+ background-color: var(--primary);
+ color: var(--secondary);
+ }
+
+ .random-criteria-table tr:hover {
+ background-color: rgba(46, 37, 34, 0.05);
+ }
+
+ /* Precautions */
+ .random-precautions {
+ padding: var(--section-gap) 0;
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ gap: var(--gap-lg);
+ border-top: var(--border);
+ }
+
+ .random-precautions__list {
+ list-style: none;
+ counter-reset: item;
+ }
+
+ .random-precautions__item {
+ counter-increment: item;
+ padding: var(--gap-sm) 0;
+ border-bottom: var(--border);
+ display: flex;
+ align-items: baseline;
+ }
+
+ .random-precautions__item::before {
+ content: "0" counter(item);
+ font-weight: 700;
+ margin-right: var(--gap-sm);
+ font-size: 1.5rem;
+ }
+
+ /* Suitability */
+ .random-suitability {
+ padding: var(--section-gap) 0;
+ border-top: var(--border);
+ }
+
+ .random-suitability__grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: var(--gap-md);
+ margin-top: var(--gap-md);
+ }
+
+ .random-suitability__card {
+ border: var(--border);
+ padding: var(--gap-md);
+ }
+
+ .random-suitability__card-title {
+ font-size: 1.125rem;
+ font-weight: 700;
+ margin-bottom: var(--gap-sm);
+ display: flex;
+ align-items: center;
+ gap: var(--gap-sm);
+ }
+
+ .random-suitability__icon {
+ width: 24px;
+ height: 24px;
+ background-color: var(--accent);
+ }
+
+ /* FAQ Section */
+ .random-faq {
+ padding: var(--section-gap) 0;
+ border-top: var(--border);
+ }
+
+ .random-faq__item {
+ border-bottom: var(--border);
+ padding: var(--gap-md) 0;
+ }
+
+ .random-faq__question {
+ font-size: 1.25rem;
+ font-weight: 700;
+ margin-bottom: var(--gap-sm);
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .random-faq__answer {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.3s ease;
+ }
+
+ .random-faq__answer-content {
+ padding-top: var(--gap-sm);
+ color: var(--primary);
+ line-height: 1.8;
+ }
+
+ .random-faq__toggle {
+ font-size: 1.5rem;
+ font-weight: 300;
+ transition: transform 0.3s ease;
+ }
+
+ /* Author Bio */
+ .random-author {
+ padding: var(--section-gap) 0;
+ border-top: var(--border);
+ }
+
+ .random-author__block {
+ display: flex;
+ align-items: flex-start;
+ gap: var(--gap-md);
+ padding: var(--gap-md);
+ border: var(--border);
+ }
+
+ .random-author__avatar {
+ width: 80px;
+ height: 80px;
+ background-color: var(--accent);
+ flex-shrink: 0;
+ }
+
+ .random-author__name {
+ font-weight: 700;
+ margin-bottom: 4px;
+ }
+
+ .random-author__title {
+ font-size: 0.875rem;
+ color: var(--accent);
+ margin-bottom: var(--gap-sm);
+ }
+
+ /* Footer */
+ .random-footer {
+ border-top: var(--border);
+ padding: var(--gap-md) 0;
+ font-size: 0.875rem;
+ }
+
+ .random-footer__inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .random-hamburger {
+ display: block;
+ }
+
+ .random-nav__links {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background-color: var(--secondary);
+ border-bottom: var(--border);
+ flex-direction: column;
+ padding: var(--gap-md);
+ gap: var(--gap-md);
+ }
+
+ .random-nav__links.is-active {
+ display: flex;
+ }
+
+ .random-hero__grid {
+ grid-template-columns: 1fr;
+ gap: var(--gap-lg);
+ }
+
+ .random-hero__visual {
+ height: 300px;
+ }
+
+ .random-precautions {
+ grid-template-columns: 1fr;
+ }
+
+ .random-criteria-table {
+ display: block;
+ overflow-x: auto;
+ }
+
+ .random-author__block {
+ flex-direction: column;
+ }
+ }
+
+ /* Design System Specific */
+ .random-section-divider {
+ height: 1px;
+ background-color: var(--primary);
+ margin: var(--section-gap) 0;
+ }
+ </style>
+</head>
+<body>
+ <header class="random-nav">
+ <div class="random-container">
+ <div class="random-nav__inner">
+ <a href="/" class="random-nav__logo">영등포 가라오케 위치 정보</a>
+ <button class="random-hamburger" aria-label="메뉴 토글">
+ <span class="random-hamburger__line"></span>
+ <span class="random-hamburger__line"></span>
+ <span class="random-hamburger__line"></span>
+ </button>
+ <ul class="random-nav__links">
+ <li><a href="#selection" class="random-nav__link">선택 기준</a></li>
+ <li><a href="#precautions" class="random-nav__link">확인사항</a></li>
+ <li><a href="#faq" class="random-nav__link">자주 묻는 질문</a></li>
+ </ul>
+ </div>
+ </div>
+ </header>
+
+ <main>
+ <section class="random-hero" id="hero">
+ <div class="random-container">
+ <div class="random-hero__grid">
+ <div class="random-hero__content">
+ <span class="random-hero__tag">지역 정보 포털</span>
+ <h1>영등포 가라오케<br>위치 정보</h1>
+ <p>영등포 지역 내 가라오케 시설의 지리적 분포, 교통 접근성, 주변 환경에 대한 데이터 기반 분석을 통해 이용자가 목적과 상황에 맞는 최적의 장소를 선택할 수 있도록 지원합니다.</p>
+ </div>
+ <div class="random-hero__visual">
+ <div class="random-geo-shape random-geo-shape--rect1"></div>
+ <div class="random-geo-shape random-geo-shape--rect2"></div>
+ <div class="random-geo-shape random-geo-shape--circle"></div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="random-selection" id="selection">
+ <div class="random-container">
+ <h2>가라오케 선택 기준</h2>
+ <p>합리적인 선택을 위해 고려해야 할 핵심 변수들을 데이터와 함께 제시합니다.</p>
+ <table class="random-criteria-table">
+ <thead>
+ <tr>
+ <th scope="col">기준 항목</th>
+ <th scope="col">고려 사항</th>
+ <th scope="col">정보 중요도</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>지리적 위치</td>
+ <td>지하철역 도보 거리, 주요 도로 접근성, 주변 상권 활성도</td>
+ <td>매우 높음</td>
+ </tr>
+ <tr>
+ <td>시설 환경</td>
+ <td>_rooms_ 객실 크기, 방음 시설, 인테리어 및 위생 상태</td>
+ <td>높음</td>
+ </tr>
+ <tr>
+ <td>이용 조건</td>
+ <td>예약 방식, 최대 인원, 연령 제한, 추가 서비스 제공 여부</td>
+ <td>보통</td>
+ </tr>
+ <tr>
+ <td>가격 정책</td>
+ <td>시간당 요금 체계, 추가 비용 항목, 패키지 구성</td>
+ <td>높음</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <section class="random-precautions" id="precautions">
+ <div class="random-container">
+ <h2>이용 전 확인사항</h2>
+ <div>
+ <p>원활한 이용을 위해 예약 및 방문 전 반드시 확인해야 할 사항들을 정리했습니다.</p>
+ </div>
+ <ul class="random-precautions__list">
+ <li class="random-precautions__item">영업 시간 및 휴무일을 시설 홈페이지 또는 전화로 반드시 확인하십시오.</li>
+ <li class="random-precautions__item">예약 방법(온라인, 전화)과 예약 취소/변경 규정을 사전에 인지해야 합니다.</li>
+ <li class="random-precautions__item">기기 사용료, 음료 제공 여부, 시간 초과 시 추가 요금 등 구체적인 비용 구조를 파악해야 합니다.</li>
+ <li class="random-precautions__item">이용 인원과 목적(일반 모임, 비즈니스 등)에 적합한 _rooms_ 규모를 선택해야 합니다.</li>
+ </ul>
+ </div>
+ </section>
+
+ <section class="random-suitability" id="suitability">
+ <div class="random-container">
+ <h2>조건별 적합성</h2>
+ <div class="random-suitability__grid">
+ <div class="random-suitability__card">
+ <div class="random-suitability__card-title">
+ <div class="random-suitability__icon"></div>
+ <span>대중교통 이용 그룹</span>
+ </div>
+ <p>지하철 1, 2, 5호선 환승역인영등포역, 신도림역 인접 시설이 최적입니다. 도보 5분 이내 접근성을 우선고려하십시오.</p>
+ </div>
+ <div class="random-suitability__card">
+ <div class="random-suitability__card-title">
+ <div class="random-suitability__icon"></div>
+ <span>대규모 인원 모임</span>
+ </div>
+ <p>10인 이상 이용 시 대형 _rooms_ 보유 여부와 예약 우선순위가 중요합니다. 시설의 최대 수용 인원 정보를 반드시 확인해야 합니다.</p>
+ </div>
+ <div class="random-suitability__card">
+ <div class="random-suitability__card-title">
+ <div class="random-suitability__icon"></div>
+ <span>비즈니스 및 회식</span>
+ </div>
+ <p>방음 시설, 세련된 인테리어, 주차 편의성 등 전문적인 환경을 갖춘 시설을 선택하는 것이 적합합니다.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="random-faq" id="faq">
+ <div class="random-container">
+ <h2>자주 묻는 질문</h2>
+ <div class="random-faq__item">
+ <div class="random-faq__question">
+ <span>영등포 지역 가라오케의 평균 이용 요금은 어느 정도입니까?</span>
+ <span class="random-faq__toggle">+</span>
+ </div>
+ <div class="random-faq__answer">
+ <div class="random-faq__answer-content">
+ <p>시설 규모와 제공 서비스에 따라 차이가 있으나, 일반적인 1시간 이용 요금은 2만원~4만원 사이에서 형성되어 있습니다. 심야 시간대나 주말에는 추가 요금이 부과될 수 있으므로 예약 시 확인이 필요합니다.</p>
+ </div>
+ </div>
+ </div>
+ <div class="random-faq__item">
+ <div class="random-faq__question">
+ <span>예약 없이 방문하여 바로 이용이 가능한가요?</span>
+ <span class="random-faq__toggle">+</span>
+ </div>
+ <div class="random-faq__answer">
+ <div class="random-faq__answer-content">
+ <p>평일 오후와 같은 비수기 시간대에는 예약 없이 방문하여 즉시 이용이 가능할 수 있습니다. 그러나 주말, 공휴일, 야간 시간대에는 사전 예약이 필수적이며, 미예약으로 인해 대기 시간이 길어질 수 있습니다.</p>
+ </div>
+ </div>
+ </div>
+ <div class="random-faq__item">
+ <div class="random-faq__question">
+ <span>어린이 동반 이용이 가능한 시설이 있나요?</span>
+ <span class="random-faq__toggle">+</span>
+ </div>
+ <div class="random-faq__answer">
+ <div class="random-faq__answer-content">
+ <p>대부분의 가라오케 시설은 성인 위주로 운영되며, 일부 시설은 연령 제한을 두고 있습니다. 가족 단위 이용을 계획하신다면, 사전에 시설 측에 연령 제한 여부와 관련 정책을 반드시 확인하시기 바랍니다.</p>
+ </div>
+ </div>
+ </div>
+ <div class="random-faq__item">
+ <div class="random-faq__question">
+ <span>주차 공간은 충분하게 마련되어 있나요?</span>
+ <span class="random-faq__toggle">+</span>
+ </div>
+ <div class="random-faq__answer">
+ <div class="random-faq__answer-content">
+ <p>영등포 상업 지역의 특성상 주차 공간이 제한적인 시설이 많습니다. 자가용 이용이 예상될 경우, 해당 시설의 주차 가능 대수와 유료/무료 여부를 예약 시 사전에 확인하는 것을 강력히 권장합니다.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="random-author" id="author">
+ <div class="random-container">
+ <div class="random-author__block">
+ <div class="random-author__avatar"></div>
+ <div>
+ <div class="random-author__name">이지수</div>
+ <div class="random-author__title">지역 상권 분석 리서처</div>
+ <p>서울 주요 상권의 유흥·레저 시설 분포와 이용 패턴을 5년간 연구해 온 로컬 데이터 애널리스트입니다. 정량적 데이터를 바탕으로 실용적인 공간 정보를 전달하는 데 집중하고 있습니다.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+ </main>
+
+ <footer class="random-footer">
+ <div class="random-container">
+ <div class="random-footer__inner">
+ <div>© 2024 영등포 가라오케 위치 정보. 모든 권리 보유.</div>
+ <div>본 사이트의 정보는 참고용이며, 실제 이용 시 시설 측의 정책을 우선으로 합니다.</div>
+ </div>
+ </div>
+ </footer>
+
+ <script>
+ // Mobile menu toggle
+ const hamburger = document.querySelector('.random-hamburger');
+ const navLinks = document.querySelector('.random-nav__links');
+ hamburger.addEventListener('click', () => {
+ navLinks.classList.toggle('is-active');
+ });
+
+ // FAQ accordion
+ const faqQuestions = document.querySelectorAll('.random-faq__question');
+ faqQuestions.forEach(question => {
+ question.addEventListener('click', () => {
+ const answer = question.nextElementSibling;
+ const toggle = question.querySelector('.random-faq__toggle');
+ const isExpanded = answer.style.maxHeight;
+ 
+ // Close all others
+ document.querySelectorAll('.random-faq__answer').forEach(ans => {
+ ans.style.maxHeight = null;
+ });
+ document.querySelectorAll('.random-faq__toggle').forEach(tog => {
+ tog.textContent = '+';
+ });
+
+ if (!isExpanded) {
+ answer.style.maxHeight = answer.scrollHeight + "px";
+ toggle.textContent = '−';
+ }
+ });
+ });
+ </script>
+
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "영등포 가라오케 위치 정보",
+ "url": "https://zone-karaoke-note.karaoke-gyodae-hub.xyz",
+ "author": {
+ "@type": "Person",
+ "name": "이지수"
+ }
+ }
+ </script>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "영등포 지역 가라오케의 평균 이용 요금은 어느 정도입니까?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "시설 규모와 제공 서비스에 따라 차이가 있으나, 일반적인 1시간 이용 요금은 2만원~4만원 사이에서 형성되어 있습니다. 심야 시간대나 주말에는 추가 요금이 부과될 수 있으므로 예약 시 확인이 필요합니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "예약 없이 방문하여 바로 이용이 가능한가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "평일 오후와 같은 비수기 시간대에는 예약 없이 방문하여 즉시 이용이 가능할 수 있습니다. 그러나 주말, 공휴일, 야간 시간대에는 사전 예약이 필수적이며, 미예약으로 인해 대기 시간이 길어질 수 있습니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "어린이 동반 이용이 가능한 시설이 있나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "대부분의 가라오케 시설은 성인 위주로 운영되며, 일부 시설은 연령 제한을 두고 있습니다. 가족 단위 이용을 계획하신다면, 사전에 시설 측에 연령 제한 여부와 관련 정책을 반드시 확인하시기 바랍니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "주차 공간은 충분하게 마련되어 있나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "영등포 상업 지역의 특성상 주차 공간이 제한적인 시설이 많습니다. 자가용 이용이 예상될 경우, 해당 시설의 주차 가능 대수와 유료/무료 여부를 예약 시 사전에 확인하는 것을 강력히 권장합니다."
+ }
+ }
+ ]
+ }
+ </script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영등포 가라오케 위치 정보 — 접근성 및 환경 분석 가이드</title>
+    <meta name="description" content="영등포 지역 가라오케의 위치, 접근성 및 환경을 종합적으로 분석하여 목적과 인원에 맞는 최적의 공간을 선택할 수 있도록 안내합니다.">
+    <meta name="keywords" content="영등포 가라오케, 가라오케 위치, 영등포 노래방, 가라오케 선택 기준, 영등포 지역 가이드">
+    <link rel="canonical" href="https://zone-karaoke-note.karaoke-gyodae-hub.xyz/about.html">
+    <meta property="og:title" content="영등포 가라오케 위치 정보 — 접근성 및 환경 분석 가이드">
+    <meta property="og:description" content="영등포 지역 가라오케의 위치, 접근성 및 환경을 종합적으로 분석하여 목적과 인원에 맞는 최적의 공간을 선택할 수 있도록 안내합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zone-karaoke-note.karaoke-gyodae-hub.xyz/about.html">
+    <style>
+        :root {
+            --bg-primary: #fafafa;
+            --bg-secondary: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --accent: #000000;
+            --border: #e0e0e0;
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 40px;
+            --spacing-xl: 64px;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --font-sans: 'Helvetica Neue', Arial, sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .random-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: var(--spacing-md);
+        }
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-xs);
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+        }
+        p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+        /* Navigation */
+        .random-nav {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .random-nav__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-sm) 0;
+        }
+        .random-nav__logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        .random-nav__links {
+            display: flex;
+            gap: var(--spacing-md);
+            list-style: none;
+        }
+        .random-nav__link {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        .random-nav__link:hover {
+            color: var(--text-primary);
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        /* Hero */
+        .hero {
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+        .hero__subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .card__title {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        .card__text {
+            font-size: 0.95rem;
+        }
+        /* Info List */
+        .info-list {
+            margin: var(--spacing-md) 0;
+            list-style: none;
+        }
+        .info-list__item {
+            padding: var(--spacing-sm) 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+        .info-list__label {
+            font-weight: 700;
+            min-width: 120px;
+        }
+        /* FAQ */
+        .faq {
+            margin-top: var(--spacing-xl);
+        }
+        .faq__item {
+            margin-bottom: var(--spacing-md);
+        }
+        .faq__question {
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+        }
+        .faq__answer {
+            color: var(--text-secondary);
+        }
+        /* Footer */
+        .footer {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-lg) 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .random-nav__links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-secondary);
+                flex-direction: column;
+                padding: var(--spacing-sm);
+                border-bottom: 1px solid var(--border);
+            }
+            .random-nav__links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            .info-list__item {
+                flex-direction: column;
+            }
+        }
+    </style>
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+    <nav class="random-nav">
+        <div class="random-container random-nav__inner">
+            <a href="/" class="random-nav__logo">Zone Karaoke</a>
+            <button class="hamburger" onclick="document.querySelector('.random-nav__links').classList.toggle('active')" aria-label="메뉴 열기">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul class="random-nav__links">
+                <li><a href="/" class="random-nav__link">메인</a></li>
+                <li><a href="/info" class="random-nav__link">정보</a></li>
+                <li><a href="/guide" class="random-nav__link">가이드</a></li>
+                <li><a href="/about" class="random-nav__link">소개</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="random-container">
+        <section class="hero">
+            <h1>영등포 가라오케 위치 정보</h1>
+            <p class="hero__subtitle">영등포 지역 가라오케의 입지적 특성과 접근성을 데이터 기반으로 분석하여, 이용 목적에 부합하는 공간 선정에 필요한 실질적인 정보를 제공합니다.</p>
+        </section>
+
+        <section>
+            <h2>영등포 지역 가라오케 입지 분석</h2>
+            <p>영등포는 서울 서남부의 핵심 상업지구로서, 교통 허브 기능과 유동 인구가 집중되어 가라오케 시설의 접근성에 결정적인 영향을 미칩니다. 다음은 주요 거점별 특성입니다.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card__title">영등포역 인근</h3>
+                    <p class="card__text">1호선과 5호선 환승 구역으로, 지하철 이용 고객의 접근성이 가장 높은 지역입니다. 주거 및 상업 시설이 혼재하여 다양한 연령층이 이용합니다.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">신도림역 일대</h3>
+                    <p class="card__text">1호선과 2호선이 교차하는 대규모 환승역으로, 오피스 근로자 및 젊은 층의 이용이 두드러집니다. 주변 상권이 활성화되어 복합적인 이용 패턴이 나타납니다.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">문래동 지역</h3>
+                    <p class="card__text">창작 공방과 카페가 밀집한 문화지구로, 개성 있는 인테리어를 갖춘 시설이 분포합니다. 주차 공간 확보율이 상대적으로 높아 자가용 이용 고객에게 적합합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>접근성 평가 기준</h2>
+            <p>가라오케 선택 시 고려해야 할 핵심 접근성 요소를 정량적으로 평가하여, 목적에 맞는 최적의 입지를 선별할 수 있도록 정리했습니다.</p>
+            
+            <ul class="info-list">
+                <li class="info-list__item">
+                    <span class="info-list__label">대중교통 접근성</span>
+                    <span>지하철역 도보 5분 이내 거리인지 여부, 버스 노선 연계 상태, 야간 교통편 운영 여부를 종합적으로 판단합니다.</span>
+                </li>
+                <li class="info-list__item">
+                    <span class="info-list__label">주차 환경</span>
+                    <span>건물 내 주차 공간 유무, 주변 공영주차장 위치, 주차 요금 정책 등을 확인하여 자가용 이용 편의성을 평가합니다.</span>
+                </li>
+                <li class="info-list__item">
+                    <span class="info-list__label">도보 이동 환경</span>
+                    <span>역에서 시설까지의 보도 상태, 안전 등 밝기, 주요 상권과의 연계성 등을 고려합니다.</span>
+                </li>
+                <li class="info-list__item">
+                    <span class="info-list__label">주변 편의시설</span>
+                    <span>식당, 편의점, 카페 등 주변 시설의 밀도와 다양성을 파악하여, 이용 전후의 부가 활동 편의성을 검토합니다.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>시설 환경 평가 항목</h2>
+            <p>실내 환경은 가라오케 이용 만족도에 직접적인 영향을 미칩니다. 다음 항목은 시설을 방문하여 직접 확인하거나 리뷰를 통해 파악할 수 있는 핵심 지표입니다.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card__title">음향 시스템</h3>
+                    <p class="card__text">마이크 음질, 스피커 밸런스, 노래 반주 음원의 업데이트 주기 등을 통해 음향 품질을 평가합니다. 최신 음원 보유율은 서비스 수준의 중요한 지표입니다.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">좌석 및 공간 구성</h3>
+                    <p class="card__text">방별 수용 인원, 좌석 간 간격, 테이블 배치 등을 확인합니다. 인원 수에 적합한 크기의 룸을 선택하는 것이 쾌적한 이용의 기본 조건입니다.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">위생 상태</h3>
+                    <p class="card__text">방문 시 청결도를 점검하며, 정기적인 방역 및 소독 여부는 리뷰를 통해 간접적으로 확인할 수 있습니다. 특히 마이크 커버의 교체 여부는 위생 관리 수준을 가늠하는 기준이 됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>자주 묻는 질문</h2>
+            <div class="faq__item">
+                <div class="faq__question">Q. 야간 이용 시 대중교통은 어떻게 이용할 수 있나요?</div>
+                <div class="faq__answer">A. 영등포역과 신도림역은 심야 시간대에도 지하철이 운영됩니다. 또한, 주요 거점에는 택시 승강장이 위치하여 야간 이동이 가능합니다. 다만, 시설의 영업 종료 시간과 대중교통 운행 시간을 사전에 확인하는 것이 바람직합니다.</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">Q. 주말과 평일의 이용 환경 차이가 있나요?</div>
+                <div class="faq__answer">A. 주말은 유동 인구가 증가하여 사전 예약이 권장됩니다. 평일은 상대적으로 여유로운 이용이 가능하며, 일부 시설에서는 평일 특가 이벤트를 운영하기도 합니다. 이용 목적에 따라 요일을 선택하는 것이 합리적입니다.</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">Q. 접근성이 좋은 곳은 항상 가격이 높은가요?</div>
+                <div class="faq__answer">A. 반드시 그렇지는 않습니다. 역세권이라 하더라도 건물 위치, 시설 규모, 운영 방식에 따라 가격은 달라집니다. 접근성과 가격을 함께 고려하여 균형 잡힌 선택을 하는 것이 중요합니다.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="random-container">
+            <p>© 2024 Zone Karaoke Information Hub. All rights reserved.</p>
+            <p>본 페이지의 정보는 영등포 지역 가라오케 환경 분석을 목적으로 하며, 특정 업체의 홍보를 목적으로 하지 않습니다.</p>
+        </div>
+    </footer>
+</body>
+</html>
